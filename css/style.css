@@ -1,0 +1,205 @@
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body{
+	background: #000000
+}
+a{
+	text-decoration: none;
+}
+ul{
+	list-style: none;	/* リストの先頭なし */
+}
+
+#wrap{
+	width: 100%;
+	overflow : hidden;
+	background: -moz-linear-gradient(top, #000033, #000000);/* Firefox用 */  
+	background: -webkit-gradient(linear, center top, center bottom, from(#000033), to(#000000));/* Safari,Google Chrome用 */  
+}
+
+#all{
+	width: 700px;
+	margin: 0 auto;
+}
+
+#box_left{
+	width: 350px;
+	padding: 10px 0px 0px 10px;
+	float:left;
+}
+
+#box_right{
+	float:right;
+	padding: 0px 0px 0px 30px;
+	color: #ffffff;
+/*	border: 5px solid maroon ;*/
+}
+
+#page_name{
+	color: #616161;
+	font-family: 'Gungsuh', serif;
+	font-size: 100px ;
+
+	color: rgba(59, 59, 59, 1);
+	text-shadow:
+	-1px -1px 0px #5c5c5c,
+	1px -1px 0px #5c5c5c,
+	1px 1px 0px #5c5c5c,
+	-1px 1px 0px #5c5c5c,
+	0px 0px 25px rgba(97, 97, 97, 0.7),
+	0px 0px 20px rgba(97, 97, 97, 0.7);
+}
+
+#menu {
+	text-align: left;
+	padding: 130px 0px 0px 10px;
+}
+
+#menu_box {
+	width:340px;
+	height:40px;
+	padding: 10px 10px 0px 10px;
+	color: #ffffff;
+}
+#menu li{
+	margin:0px 10px 0px 10px;
+	display: inline;	/* 横並びのリスト*/
+}
+
+#menu li a{
+	font-family: 'Gungsuh', serif;
+	font-size: 20px ;
+	color:#336699;
+	
+	-webkit-transition: color 0.5s linear;
+	-moz-transition: color 0.5s linear;
+}
+
+#menu li a:hover{ /*ロールオーバーの設定*/
+	color:#3399ff;
+}
+
+#update {
+	color: #ffffff;
+	text-align: left;
+	padding: 10px 0px 0px 10px;
+}
+
+#update_box {
+	width:340px;
+	height:100px;
+	padding: 10px 10px 10px 10px;
+	color: #ffffff;
+	/* 枠線の設定 */
+	border: 1px dashed #bbb;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+
+#update li{
+	margin:0px 10px 0px 10px;
+	/*display: inline;*/	/* 横並びのリスト*/
+}
+#update ul{
+	margin:5px 0px 0px 0px;
+}
+
+#copyright {
+	color: #A9A9A9;
+	text-align: left;
+	padding: 10px 0px 0px 15px;
+}
+
+#top_image {
+	text-align: left;
+	display: inline-block;
+}
+
+#logo {
+	padding: 25px 0px 0px 5px;
+}
+
+
+
+#logo_circle {
+
+	display: block;
+	height: 160px;
+	width: 160px;
+
+	background-color: #0066cc;
+	
+	border-radius: 80px;
+	-moz-border-radius: 80px;
+	-webkit-border-radius: 80px;
+
+	-webkit-transition: all 1.5s ease;
+	-moz-transition: all 1.5s ease;
+	
+}
+
+#logo_circle:hover{ /*ロールオーバーの設定*/
+
+	-webkit-transform: rotate(360deg);
+	-moz-transform: rotate(360deg);
+
+	background-color: #330033;
+	
+
+}
+
+
+
+
+#box_right:after{ 
+
+
+content: "";
+width: 100px;
+height: 100px;
+top: 0;
+	background: rgba(0, 255, 0, 0.5); /* カラーを重ねる */
+}
+
+
+/* 文字のグラデーション */
+.g1{
+	color: #0000ff;
+}
+.g2{
+	color: #000099;
+}
+.g3{
+	color: #000066;
+}

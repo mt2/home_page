@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+			<title>photo</title>
+			<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+			<script type="text/javascript" src="jquery.simpleBox.js"></script>
+		<script type="text/javascript">
+		
+		
+		$(function(){
+			 $('#carouselWrap').simpleBox();
+		})
+		</script>
+
+		<style type="text/css">
+*{
+	margin:0;
+	padding:0;
+}
+#carouselWrap{
+	margin:50px auto;
+	width:500px;		/** 写真1枚分の横幅 **/
+	height:380px;		/** 写真1枚分の縦幅 **/
+	padding:5px;
+	position:relative;/** 相対位置 **/
+}
+#carouselPrev{
+	position:absolute;/** 絶対位置 **/
+	top:200px;
+	left:-20px;
+	cursor:pointer;
+}
+#carouselNext{
+	position:absolute;/** 絶対位置 **/
+	top:200px;
+	left:515px;
+	cursor:pointer;
+}
+#carouse{
+	width:100%;
+	height:100%;
+	overflow:hidden;/** ボックスからはみ出た部分は非表示 **/
+}
+
+#carouselInner ul.column{
+	width:500px;
+	height:375px;
+	padding:0 0 0 0;
+	list-style-type:none;	/** リストの先頭文字:なし **/
+	float:left;
+}
+
+#carouselInner ul.column li img{
+	border:none;
+}
+
+.img_link{
+	cursor:pointer;
+}
+#flex-active{
+	color : gold;
+	cursor: default;
+}
+</style>
+
+	</head>
+	<body>
+		<div id="carouselWrap">
+			<p id="carouselPrev"><</p>
+			<p id="carouselNext">></p>
+			<div id="carouse">
+				<div id="carouselInner">
+					<ul class="column">
+						<li><a href="#"><img src="../image/20130526/1.jpg" alt="" /></a></li>
+					</ul>
+					<ul class="column">
+						<li><a href="#"><img src="../image/20130526/2.jpg" alt="" /></a></li>
+					</ul>
+					<ul class="column">
+						<li><a href="#"><img src="../image/20130526/3.jpg" alt="" /></a></li>
+					</ul>
+					<ul class="column">
+						<li><a href="#"><img src="../image/20130526/4.jpg" alt="" /></a></li>
+					</ul>
+					<ul class="column">
+						<li><a href="#"><img src="../image/20130526/1.jpg" alt="" /></a></li>
+					</ul>
+					<ul class="column">
+						<li><a href="#"><img src="../image/20130526/2.jpg" alt="" /></a></li>
+					</ul>
+					<ul class="column">
+						<li><a href="#"><img src="../image/20130526/3.jpg" alt="" /></a></li>
+					</ul>
+					<ul class="column">
+						<li><a href="#"><img src="../image/20130526/4.jpg" alt="" /></a></li>
+					</ul>
+				</div>
+			</div>
+			<div id="move_link"></div>
+		</div>
+		
+
+		メモ<br>
+		ソースコードの把握<br>
+		写真の下に●を設置して、●でも移動できるように修正<br>
+		20130530<br>
+		---<br>
+		明日はjqueryの実装から続きをやります<br>
+		20130528<br>
+		---<br>
+		機能不足だけど、そろそろプラグインの形にしよう…<br>
+		20130611<br>
+		---<br>
+		プラグイン作成中<br>
+		難しい…微妙に作り直しが必要かも…<br>
+		作りたい内容メモ<br>
+		・引数で制御できる項目<br>
+		　-左右の矢印の有無<br>
+		　-●の有無<br>
+		　-●の色設定<br>
+		【機能追加】<br>
+		・一定時間ごとに自動でスライドする<br>
+		・タッチパネル<br>
+		・レスポンシブ<br>
+
+	</body>
+</html>
